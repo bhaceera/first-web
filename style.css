@@ -1,126 +1,172 @@
-h1{
-	font-size: 70px;
-	font-style: italic;
-	color: yellow;
-	text-align: center;
+body{
+	margin: 0;
 }
-
-body, div{
+*{
+	box-sizing: border-box;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	
+}
+.image{
+	position: absolute;
+	background-image: url("img/pic.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
+	width: inherit;
+	height: 95vh;
+	background-position: center;
+	opacity: 0.9;
+
+}
+.image-overlay{
+	width: inherit;
+	height: 95vh;
+	position: absolute;
 	background-color: black;
-    
+	opacity: 0.3;
+	z-index: 2;
+}
 
+.text{
+	margin-top: 25%;
+	color: #e80220;
+	text-align: left;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	font-size: 30px;
+	background:transparent;
+	position: absolute;
+	font-size: 2em;
 }
-.active {
-    background-color: gold;
-    color: white;
-}
- h2{
-	font-style: italic;
-	color: gold;
+.me{
 	text-align: center;
-	font-size: 25px;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	margin: 3% 5% 3% 5%;
 }
-p, ul{
-	font-family: times;
-	color: lightpink;
-	text-align: center;
-	font-size: 20px;
-	font-style: italic;
+.basic{
+	background-color: black;
+	color: white;
+	margin: 2%;
+	padding: 10%;
 }
-
-.inputs{
-	width: 25%;
-	height: 60px;
+.basic td{
+	padding: 7%;
 }
-
-.btn{
-	color: chocolate;
-	min-width: 45px;
-	width: 20px;
-	height: 20px;
-	background-color: ;
-
+.note{
+	margin: 2%;
 }
-
-
-.menu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.menu li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: chocolate;
-
-}
-.icon {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center; 
-	height: 50px; 
-	display: block; 
-	padding: 5px 5px; 
+.note a{
 	text-decoration: none;
+	color: black;
+	padding: 2%;
+	border: 1px solid black;
+
+}
+.note a:hover{
+	background-color: black;
+	color: white;
+}
+.edu{
+	margin:2%;
+}
+.edu th{
+	color: black;
+	background-color: chocolate;
+}
+.edu tr{
+	color: white;
+	background-color: chocolate;
+	padding: 10%;
+}
+.contact{
+	background-image: url('img/back3.jpg');
+	text-align: center;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 40% 35% 25%;
+	padding:5% 0% 5% 0%;
+	 
+}
+.message{
+	margin-left: 10%;
+}
+.message input{
+	width: 60%;
+	height: 10vh;
+	background-color: black;
+	color: white;
+	margin-top: 2%;
+}
+button{
+	width: 15%;
+	height: 7vh;
+	margin-top: 2%;
+	background-color: lightgrey;
+}
+.meet{
+	margin-right: 5%;
+}
+
+.meet img{
+	width: 55%;
+	height: 45vh;
+	border-radius: 100%;
+}
+.icon{
+	margin-right: 5%;
+	padding: 0;
 }
 .icon img{
+	width: 20%;
+	height: 10vh;
 	border-radius: 100%;
-	width: 40px;
-	height: 40px;
 }
-img{
-	width: 200px;
-	height: 200px;
+.service{
+	margin: 3% 10% 3% 20%;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 15% 85%;
 
 }
-.content{
-	background: url("back2.jpg") no-repeat center fixed; 
-    background-size: cover;
-	min-height: 600px;
-	height: auto;
-	margin-bottom: -50px;
+.img2 img{
+	width: 40%;
+	height: 35vh;
+	margin: 3% 0% 3% 0%;
+}
+
+.pic{
+	margin: 3% 10% 3% 20%;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 15% 85%;
+
+}
+.img img{
+	width: 30%;
+	height: 40vh;
+	margin: 3% 0% 3% 0%;
+}
+.footer{
+	background-color: black;
 	text-align: center;
-	opacity: 0.5;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 30% 25% 45%;
+	color:grey;
+	padding-top: 2%;
+}
+.footer img{
+	width: 7%;
+	height: 5vh;
+	border-radius: 100%;
 }
 
-.middle-form{
-	display: block;
-	margin: 0px auto;
-	width: 60%;
-}
+@media screen and (max-width: 500px){
+	
 
-.form-input{
-	width: 100%;
-	height: 20px;
-}
-
-a{
-	text-decoration: none;
-	color: khaki;
-	border-style: block;
-	border-color: grey;
-}
-
-button{
-	padding: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
-	border: 2px solid black;
-
+	
 }
